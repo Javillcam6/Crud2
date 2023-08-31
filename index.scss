@@ -1,0 +1,16 @@
+
+Parece que estás tratando de usar un mixin llamado neo con tres argumentos: 1, 1em y 1em. Para hacer esto, necesitas tener definido el mixin neo en tu hoja de estilo CSS (o en un preprocesador como Sass). Aquí te muestro cómo podrías hacerlo:
+
+scss
+Copy code
+// Definición del mixin neo
+@mixin neo($value1, $value2, $value3) {
+  property1: $value1;
+  property2: $value2;
+  property3: $value3;
+}
+
+// Uso del mixin neo con @include
+.element {
+  @include neo(1, 1em, 1em);
+}

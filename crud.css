@@ -1,4 +1,323 @@
-<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+#crud-container{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    border: solid rgba(180, 175, 146, 0.4) 3px;
+  }
+
+
+  #textInf{
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(196, 184, 109, 0.454);
+    border-radius: 8px 8px 0 0;
+  }
+
+.info-grid{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 225px;
+  /* margin-left: 100px; */
+  background-color: rgb(255, 255, 255);
+  border: solid rgba(180, 175, 146, 0.4) 3px;
+}
+#tittleInf{
+  padding: 10px;
+}
+#addInfo{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border: solid rgba(180, 175, 146, 0.4) 3px;
+  margin: 0 auto;
+  /* max-width: 600px;  */
+  padding: 20px;
+}
+.card:hover{
+    color:rgb(156, 127, 41) ;
+    border: solid gold 3px;
+    background-color: rgba(95, 95, 95, 0.139);
+}
+
+label[for="actividad"] {
+    font-size: 18px; 
+    color: rgb(0, 0, 0);     
+    font-weight: 600;
+    margin: 10px;
+  }
+  label[for="actividad"]:hover {
+    color: rgb(116, 87, 0);
+  }
+
+  #enviar{
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 14px;
+    border: solid black;
+    background-color: white;
+    border-radius: 8px;
+  }
+  #actualizar{
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 14px;
+    border: solid black;
+    background-color: white;
+    border-radius: 8px;
+  }
+  #actualizar:hover{
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    border: solid rgb(255, 191, 0);
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(116, 87, 0);
+  }
+  #enviar:hover{
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    border: solid rgb(255, 191, 0);
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(116, 87, 0);
+  }
+
+  label[for="descripcion"] {
+    font-size: 18px; 
+    color: rgb(0, 0, 0);     
+    font-weight: 600;
+    margin: 10px;
+  }
+  label[for="descripcion"]:hover {
+    color: rgb(116, 87, 0);
+  }
+
+  label[for="servicio"] {
+    font-size: 18px; 
+    color: rgb(0, 0, 0);     
+    font-weight: 600;
+    margin: 10px;
+  }
+  label[for="servicio"]:hover {
+    color: rgb(116, 87, 0);
+    font-weight: 1000;
+  }
+
+  label[for="correo"] {
+    font-size: 18px; 
+    color: rgb(0, 0, 0);     
+    font-weight: 600;
+    margin: 10px;
+  }
+  label[for="correo"]:hover {
+    color: rgb(116, 87, 0);
+  }
+  .contain{
+    margin-top: 10px;
+  }
+
+  #descripcion{
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+  }
+
+  #actividad{
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+  }
+
+  #correo{
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+  }
+
+  #mostrar{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 120px;
+  }
+
+  #servicio{
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    border:solid black 2px;
+  }
+
+  .mostrar-container{
+    width: 1580px;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  #info-container{
+    display: flex;
+    width: 90%;
+    height: 40px;
+    background-color: rgba(196, 184, 109, 0.454);
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+  }
+  .textName{
+    display: flex;
+    margin-left: 250px;
+  }
+
+  .textName1{
+    display: flex;
+    margin-left: 10px;
+  }
+  .textName2{
+    display: flex;
+    margin-left: 66px;
+  }
+  .textName3{
+    display: flex;
+    margin-left: 130px;
+  }
+
+  .botonEditar{
+    width: 80px;
+    height: 35px;
+    border: solid black;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .botonEliminar{
+    width: 80px;
+    height: 35px;
+    border: solid black;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .botonEditar:hover{
+    width: 80px;
+    height: 35px;
+    border: solid rgb(255, 191, 0);
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(116, 87, 0);
+  }
+  .botonEliminar:hover{
+    width: 80px;
+    height: 35px;
+    border: solid rgb(255, 191, 0);
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(116, 87, 0);
+  }
+
+.infoCrud{
+    width: 300px;
+    text-align: start;
+}
+.infoCrud1{
+    width: 100px;
+}
+.infoCrud2{
+    width: 170px;
+}
+
+@media (min-width: 760px) {
+  .card {
+      flex-direction: row; 
+      width: 1396.5px;
+      margin-left: 0px;
+  }
+  #crud-container{
+    flex-direction: row; 
+    width: 1396.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #textInf{
+    margin-left: 0;
+    width: 100%;
+  } 
+  #addInfo {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mostrar-container {
+    width: 100%; 
+    margin-left: 0; /
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 769px) {
+  #textInf{
+    width: 1440.5px;
+    margin-left: 125px;
+  }
+  #addInfo{
+    width: 1395px;
+  }
+  .mostrar-container {
+    width: 1580px; 
+    margin-left: 300px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mostrar-container {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin-left: 0; /* Eliminar el margen en pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 769px) {
+  .mostrar-container {
+    width: 1580px; /* Mantener el ancho original en pantallas grandes */
+    margin-left: 125px; /* Mantener el margen original en pantallas grandes */
+  }
+}
 *{
     margin: 0;
     padding: 0;
@@ -320,328 +639,3 @@ label[for="actividad"] {
   }
 }
 
-
-=======
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-#crud-container{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-    text-align: start;
-    color: rgb(0, 0, 0);
-    border: solid rgba(180, 175, 146, 0.4) 3px;
-  }
-
-
-  #textInf{
-    width: 100%;
-    margin-top: 30px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(196, 184, 109, 0.454);
-    border-radius: 8px 8px 0 0;
-  }
-
-.info-grid{
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  height: 225px;
-  /* margin-left: 100px; */
-  background-color: rgb(255, 255, 255);
-  border: solid rgba(180, 175, 146, 0.4) 3px;
-}
-#tittleInf{
-  padding: 10px;
-}
-#addInfo{
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  border: solid rgba(180, 175, 146, 0.4) 3px;
-  margin: 0 auto;
-  /* max-width: 600px;  */
-  padding: 20px;
-}
-.card:hover{
-    color:rgb(156, 127, 41) ;
-    border: solid gold 3px;
-    background-color: rgba(95, 95, 95, 0.139);
-}
-
-label[for="actividad"] {
-    font-size: 18px; 
-    color: rgb(0, 0, 0);     
-    font-weight: 600;
-    margin: 10px;
-  }
-  label[for="actividad"]:hover {
-    color: rgb(116, 87, 0);
-  }
-
-  #enviar{
-    width: 100px;
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 14px;
-    border: solid black;
-    background-color: white;
-    border-radius: 8px;
-  }
-  #actualizar{
-    width: 100px;
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 14px;
-    border: solid black;
-    background-color: white;
-    border-radius: 8px;
-  }
-  #actualizar:hover{
-    width: 100px;
-    height: 35px;
-    margin-top: 10px;
-    border: solid rgb(255, 191, 0);
-    background-color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    color: rgb(116, 87, 0);
-  }
-  #enviar:hover{
-    width: 100px;
-    height: 35px;
-    margin-top: 10px;
-    border: solid rgb(255, 191, 0);
-    background-color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    color: rgb(116, 87, 0);
-  }
-
-  label[for="descripcion"] {
-    font-size: 18px; 
-    color: rgb(0, 0, 0);     
-    font-weight: 600;
-    margin: 10px;
-  }
-  label[for="descripcion"]:hover {
-    color: rgb(116, 87, 0);
-  }
-
-  label[for="servicio"] {
-    font-size: 18px; 
-    color: rgb(0, 0, 0);     
-    font-weight: 600;
-    margin: 10px;
-  }
-  label[for="servicio"]:hover {
-    color: rgb(116, 87, 0);
-    font-weight: 1000;
-  }
-
-  label[for="correo"] {
-    font-size: 18px; 
-    color: rgb(0, 0, 0);     
-    font-weight: 600;
-    margin: 10px;
-  }
-  label[for="correo"]:hover {
-    color: rgb(116, 87, 0);
-  }
-  .contain{
-    margin-top: 10px;
-  }
-
-  #descripcion{
-    border-radius: 4px;
-    width: 200px;
-    height: 20px;
-  }
-
-  #actividad{
-    border-radius: 4px;
-    width: 200px;
-    height: 20px;
-  }
-
-  #correo{
-    border-radius: 4px;
-    width: 200px;
-    height: 20px;
-  }
-
-  #mostrar{
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    height: 120px;
-  }
-
-  #servicio{
-    width: 200px;
-    height: 30px;
-    border-radius: 4px;
-    border:solid black 2px;
-  }
-
-  .mostrar-container{
-    width: 1580px;
-    margin-top: 30px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-  }
-
-  #info-container{
-    display: flex;
-    width: 90%;
-    height: 40px;
-    background-color: rgba(196, 184, 109, 0.454);
-    border-radius: 8px 8px 0 0;
-    padding: 10px;
-  }
-  .textName{
-    display: flex;
-    margin-left: 250px;
-  }
-
-  .textName1{
-    display: flex;
-    margin-left: 10px;
-  }
-  .textName2{
-    display: flex;
-    margin-left: 66px;
-  }
-  .textName3{
-    display: flex;
-    margin-left: 130px;
-  }
-
-  .botonEditar{
-    width: 80px;
-    height: 35px;
-    border: solid black;
-    background-color: white;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .botonEliminar{
-    width: 80px;
-    height: 35px;
-    border: solid black;
-    background-color: white;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .botonEditar:hover{
-    width: 80px;
-    height: 35px;
-    border: solid rgb(255, 191, 0);
-    background-color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    color: rgb(116, 87, 0);
-  }
-  .botonEliminar:hover{
-    width: 80px;
-    height: 35px;
-    border: solid rgb(255, 191, 0);
-    background-color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    color: rgb(116, 87, 0);
-  }
-
-.infoCrud{
-    width: 300px;
-    text-align: start;
-}
-.infoCrud1{
-    width: 100px;
-}
-.infoCrud2{
-    width: 170px;
-}
-
-@media (min-width: 760px) {
-  .card {
-      flex-direction: row; 
-      width: 1396.5px;
-      margin-left: 0px;
-  }
-  #crud-container{
-    flex-direction: row; 
-    width: 1396.5px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #textInf{
-    margin-left: 0;
-    width: 100%;
-  } 
-  #addInfo {
-    margin-left: 0;
-    width: 100%;
-  }
-  .mostrar-container {
-    width: 100%; 
-    margin-left: 0; /
-  }
-}
-
-/* Estilos para pantallas más grandes */
-@media screen and (min-width: 769px) {
-  #textInf{
-    width: 1440.5px;
-    margin-left: 125px;
-  }
-  #addInfo{
-    width: 1395px;
-  }
-  .mostrar-container {
-    width: 1580px; 
-    margin-left: 300px; 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mostrar-container {
-    width: 100%; /* Ocupar todo el ancho disponible */
-    margin-left: 0; /* Eliminar el margen en pantallas pequeñas */
-  }
-}
-
-/* Estilos para pantallas más grandes */
-@media screen and (min-width: 769px) {
-  .mostrar-container {
-    width: 1580px; /* Mantener el ancho original en pantallas grandes */
-    margin-left: 125px; /* Mantener el margen original en pantallas grandes */
-  }
-}
-
-
->>>>>>> 196dd7455f8fb68ac67b32230bf6686499b09ccd

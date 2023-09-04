@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="crud.css">
+    <link rel="stylesheet" href="extra.css">
+
     <script src="https://kit.fontawesome.com/365ee233dc.js" crossorigin="anonymous"></script>
     <title>Coaching center</title>
 </head>
@@ -63,7 +66,128 @@
     </div>
     </div>
     <script src="main.js"></script>
-</body>
+
+     <form>
+            <section id="textInf">
+                <h2 id="tittleInf"> Llena con tus datos la siguiente informacion</h2>
+            </section>
+
+            <div id="addInfo">
+                <div class="contain">
+                    <label for="actividad">Nombre completo</label>
+                    <input id="actividad" type="text" placeholder="Agregar nombre">
+                </div>
+
+            <div class="contain">
+                <label for="descripcion">Numero telefonico</label>
+                <input id="descripcion" type="text" placeholder="Agregar Numero telefonico">
+            </div>
+
+            <div class="contain">
+                <label for="servicio" placeholder="Seleccionar Servicio">Seleccionar servicio</label>
+                <select id="servicio" name="coaching" placeholder="Seleccionar Servicio">
+                    <option value="Business Coaching">Business Coaching</option>
+                    <option value="Life Coaching">Life Coaching</option>
+                    <option value="Coaching deportivo">Coaching deportivo</option>
+                    <option value="Salud y bienestar">Health and wellness</option>
+                    <option value="Coaching financiero">Coaching financiero</option>
+                </select>
+            </div>
+            <div class="contain">
+                <label for="correo">Correo Electronico</label>
+                <input id="correo" type="text" placeholder="Agregar Correo Electronico">
+            </div>
+            
+                <div class="contain">
+                    <button id="enviar">Enviar</button>
+                    <button id="actualizar">Actualizar</button>
+                </div>
+            </div>
+        
+        </form>
+        
+        <div class="mostrar-container">
+            <div id="info-container">
+            <!-- <h3 class="textName1">Nombre</h3>
+            <h3 class="textName">Numero de telefono</h3>
+            <h3 class="textName2">Servicio a solicitar</h3>
+            <h3 class="textName3">Correo Electronico</h3>
+            </div>
+            <section id="mostrar"></section> -->
+            </div>
+        <div> 
+        <div id="crud-cont"></div>
+            
+            
+    <div id="artNotables">
+        <h2 class="Subtitle-2">Articulos Notables</h2>
+        <section class="container-3">
+            <div  class="inside">
+                <img class="imgradius" src="./img/35.png" alt="imagen">
+                <h3 class="titulo-articulo">Market Place comunidad</h3>
+                <p class="fecha">January 30, 2023</p>
+            </div>
+            <div class="inside">
+                <img class="imgradius" src="./img/3.png" alt="imagen">
+                <h3 class="titulo-articulo">Market Place comunidad</h3>
+                <p class="fecha">January 30, 2023</p>
+            </div>
+            <div class="inside">
+                <img class="imgradius" src="./img/5.png" alt="imagen">
+                <h3 class="titulo-articulo">Market Place comunidad</h3>
+                <p class="fecha">January 30, 2023</p>
+            </div>
+        </section>
+    </div>
+
+<jumbotron class="container-news">
+    <p class="actualizaciones">Te mandaremos mensaje una vez a la semana, sin Spam</p>
+    <h3 class="texto-22">No te pierdas las actualizaciones</h3>
+    <div class="container-4">
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label> Agregar-correo </label>
+            </div>
+        </form>
+    </div>
+    <div>
+        <div class="enviar">
+            <p class="text-enviar">Enviar</p>
+        </div>
+    </div>  
+</jumbotron>
+<footer class="footer1">
+<div class="footer-container">
+    <h4 class="footer-tittle">Suscribete</h4>
+    <p class="foot-text">Unete</p>
+    <p class="foot-text1">Beneficios</p>
+    <h4 class="footer-tittle1">Education</h4>
+    <p class="foot-text2">Colmena Academy</p>
+    <p class="foot-text3">Recursos</p>
+    <h4 class="footer-tittle2">Explora</h4>
+    <p class="foot-text4">Comunidad</p>
+    <p class="foot-text5">Blog</p>
+    <p class="foot-text6">Centro de atencion</p>
+    <h4 class="footer-tittle3">Sobre Nosotros</h4>
+    <p class="foot-text7">Quienes somos</p>
+    <p class="foot-text8">Socios</p>
+    <p class="foot-text9">Proyecto</p>
+    <h4 class="footer-tittle4">Legal</h4>
+    <p class="foot-text10">Terminos y condiciones</p>
+    <p class="foot-text11">Politica y privacidad</p>
+</div>
+<div class="footer-end">
+    <img src="./img/Iso.png" alt="logo">
+    <p class="derechos-r">© 2023 Colmena X. Todos los derechos reservados</p>
+    <div class="logofb"><i class="fa-brands fa-square-facebook"></i></div>
+    <div class="logoig"><i class="fa-brands fa-square-instagram"></i></div>
+    <div class="logotw"><i class="fa-brands fa-square-twitter"></i></div>
+    <div class="logodis"><i class="fa-brands fa-discord"></i></div>
+    <div class="logotg"><i class="fa-brands fa-telegram"></i></div>
+</div>
+</footer>
+    <script src="crud.js" text="module"></script>
     <script src="slide.js" text="module"></script>
     <script src="index.js" text="module"></script>
 </body>

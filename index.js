@@ -40,3 +40,7 @@ function slides(){
         },1500)
     }
 }
+
+
+
+

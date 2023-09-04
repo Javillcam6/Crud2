@@ -58,7 +58,7 @@ nav{
     font-weight: 600;
 }
 .enlaces-menu #m-hover:hover{
-    background-color: rgba(122, 122, 122, 0.121);
+    background-color: rgba(222, 216, 177, 0.402);
 } 
 .m-inicio{
     margin-top: 4px;
@@ -113,7 +113,7 @@ nav{
     align-items: center;
     width: 100px;
     height: 40px;
-    border: solid gold;
+    border: solid rgb(255, 196, 0);
     color: black;
     border-radius: 8px;
     margin-top: -3px;
@@ -121,6 +121,10 @@ nav{
 .text-login {
     font-size: 14px;
     font-weight: 600;
+}
+#login:hover {
+    border-radius: 8px;
+    background-color: rgb(255, 196, 0);
 }
 
 /* Dispositivos moviles */
